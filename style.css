@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+*{
+   margin: 0;
+   padding: 0;
+   list-style: none;
+   box-sizing: border-box;
+}
+::-webkit-scrollbar{
+   display: none;
+}
+body{
+   font-family: 'PT Sans', sans-serif;
+   background: #E5B245;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   min-height: 100vh; 
+}
+.container{
+  position: absolute;
+  top: -100%;
+  display: flex;
+  width: 90%;
+  padding: 10px;
+  background-color: #fff;
+  border-top: 4px solid;
+  border-color: #F38181;
+  transition: top 0.30s ease;
+}
+.container.color{
+  border-color: #90DA8D;
+}
+.show.container{
+  top: 0;
+}
+.container .wifi-ic{
+  min-width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;;
+  font-size: 18px;
+  color: #fff;
+  background-color: #DE3B60;
+}
+.container.color .wifi-ic{
+  background-color: #39CB46;
+}
+.container div{
+  padding-left: 8px;
+}
+.container div h3{
+  padding: 3px 0;
+}
+.container div p{
+  font-size: 15px;
+}
+.container div button{
+  margin-top: 4px;
+  width: 130px;
+  padding: 8px;
+  height: 35px;
+  border: none;
+  background: blue;
+  border-radius: 5px;
+  font-size: 17px;
+  color: #fff;
+  font-family: 'PT Sans', sans-serif;
+  transition: 0.2s ease;
+}
+.container.color button{
+  background-color: #616162;
+}
+.container div button:hover{
+  border: 3px solid blue;
+  background-color: #fff;
+  color: #000;
+  cursor: none;
+}
